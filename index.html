@@ -1,64 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
   <title>ArtisanFlow</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
     body {
-      font-family: Arial, sans-serif;
-      max-width: 900px;
+      font-family: sans-serif;
+      max-width: 800px;
       margin: auto;
-      padding: 20px;
-      line-height: 1.6;
+      padding: 2em;
+      background-color: #fdfdfd;
     }
-    h1 {
+    h1, h2 {
       text-align: center;
     }
     img {
       max-width: 100%;
       display: block;
-      margin: 20px auto;
-      border-radius: 8px;
+      margin: 1em auto;
+      border-radius: 6px;
     }
-    .button {
-      display: block;
+    .features {
+      margin: 2em 0;
+    }
+    .features li {
+      margin-bottom: 0.5em;
+    }
+    .github-link {
       text-align: center;
-      margin: 20px 0;
+      margin-top: 2em;
     }
-    .button a {
-      background: #0366d6;
-      color: white;
-      padding: 10px 20px;
+    .github-link a {
+      font-size: 1.1em;
       text-decoration: none;
-      border-radius: 5px;
+      color: #0366d6;
     }
   </style>
 </head>
 <body>
 
   <h1>ArtisanFlow</h1>
-  <p><em>Style Customization System for Illustration Generation</em></p>
-
-  <img src="main_image.png" alt="Main Illustration" />
-
-  <h2>Overview</h2>
-  <p>
-    ArtisanFlow is a practical framework that enables illustrators to integrate their personal artistic styles into AI-assisted image generation workflows using only a small set of reference works.
-    The system employs Low-Rank Adaptation (LoRA) fine-tuning to preserve stylistic fidelity while remaining compatible with pipelines like ControlNet and Layer Diffusion.
+  <p style="text-align: center; font-size: 1.2em;">
+    A practical style customization system for illustration generation.
   </p>
 
-  <h2>Highlights</h2>
-  <ul>
-    <li>⚙️ Multi-dimensional evaluation: style, semantics, stability, and flexibility</li>
-    <li>🎨 Prompt engineering for layered composition and pose guidance</li>
-    <li>🧩 Modular node-based UI with low deployment requirements</li>
-  </ul>
+  <img src="assets/main_preview.png" alt="ArtisanFlow preview image">
 
-  <img src="gallery.png" alt="Generation Results Gallery" />
+  <div class="features">
+    <h2>Key Features</h2>
+    <ul>
+      <li>🔧 Easy integration of personal artistic styles via LoRA fine-tuning</li>
+      <li>🎨 High stylistic fidelity and semantic accuracy</li>
+      <li>📦 Compatible with ControlNet & Layer Diffusion</li>
+      <li>🧩 Modular & user-friendly node-based interface</li>
+      <li>🖼️ Multi-dimensional evaluation: style, semantics, stability, flexibility</li>
+    </ul>
+  </div>
 
-  <div class="button">
-    <a href="https://github.com/FranklinLiu1026/ComfyUI-for-ArtisanFlow" target="_blank">View on GitHub</a>
+  <h2>Generation Results</h2>
+  <img src="assets/gallery.png" alt="Gallery of generated illustrations">
+
+  <div class="github-link">
+    <p>
+      🔗 <a href="https://github.com/FranklinLiu1026/ComfyUI-for-ArtisanFlow" target="_blank">
+        View on GitHub
+      </a>
+    </p>
   </div>
 
 </body>
